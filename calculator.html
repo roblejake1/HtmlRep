@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NormalCalculator</title>
+    <style>
+      body {
+        background-color: #2c2f33;
+        font-family: 'Roboto', sans-serif;
+        color: #ffffff;
+      }
+      
+      h1 {
+        font-size: 48px;
+        margin-top: 50px;
+        text-align: center;
+        text-shadow: 0px 0px 5px #ffffff;
+      }
+      
+      form {
+        text-align: center;
+      }
+      
+      input[type="text"] {
+        background-color: #1e2023;
+        border: none;
+        border-radius: 5px;
+        color: #ffffff;
+        font-size: 32px;
+        height: 80px;
+        margin-bottom: 20px;
+        padding: 10px;
+        text-align: right;
+        width: 80%;
+      }
+      
+      input[type="button"] {
+        background-color: #4b9bd1;
+        border: none;
+        border-radius: 5px;
+        color: #ffffff;
+        font-size: 24px;
+        height: 60px;
+        margin: 5px;
+        width: 20%;
+        transition: all 0.2s ease;
+      }
+      
+      input[type="button"]:hover {
+        background-color: #73c4fb;
+        cursor: pointer;
+      }
+      
+      input[type="button"]:active {
+        background-color: #2672a6;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <form>
+      <input type="text" id="result" disabled><br>
+      <input type="button" value="1" onclick="document.getElementById('result').value += '1'">
+      <input type="button" value="2" onclick="document.getElementById('result').value += '2'">
+      <input type="button" value="3" onclick="document.getElementById('result').value += '3'">
+      <input type="button" value="+" onclick="document.getElementById('result').value += '+'"><br>
+      <input type="button" value="4" onclick="document.getElementById('result').value += '4'">
+      <input type="button" value="5" onclick="document.getElementById('result').value += '5'">
+      <input type="button" value="6" onclick="document.getElementById('result').value += '6'">
+      <input type="button" value="-" onclick="document.getElementById('result').value += '-'"><br>
+      <input type="button" value="7" onclick="document.getElementById('result').value += '7'">
+      <input type="button" value="8" onclick="document.getElementById('result').value += '8'">
+      <input type="button" value="9" onclick="document.getElementById('result').value += '9'">
+      <input type="button" value="*" onclick="document.getElementById('result').value += '*'"><br>
+      <input type="button" value="C" onclick="document.getElementById('result').value = ''">
+      <input type="button" value="0" onclick="document.getElementById('result').value += '0'">
+      <input type="button" value="=" onclick="checkInput()"><br>
+      <input type="button" value="/" onclick="document.getElementById('result').value += '/'"> </form> <script> function checkInput() { const input = document.getElementById('result').value; if (input === '69') { window.location.href = 'https://www.youtube.com'; } else { document.getElementById('result').value = eval(input); } } </script>
+
+</body> </html>
